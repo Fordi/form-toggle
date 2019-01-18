@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './FormToggle.module.css';
+import { joinClass } from './utility';
 
 export default ({
   id,
@@ -21,7 +22,7 @@ export default ({
         className={styles.input}
       />
       <label
-        className={styles.label}
+        className={joinClass(styles.label, className)}
         htmlFor={uname}
       >
         <span className="visuallyhidden">{title||' '}</span>
