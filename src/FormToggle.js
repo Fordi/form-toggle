@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './FormToggle.module.css';
-import { joinClass } from './utility';
+import { joinClass, randomId } from './utility';
 
 export default ({
   id,
@@ -10,7 +10,7 @@ export default ({
   value,
   title,
 }) => {
-  let uname = id || ((name || '_') + Math.random().toString(36).substr(2));
+  let uname = id || randomId(name);
   return (
     <>
       <input
