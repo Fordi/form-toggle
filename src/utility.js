@@ -3,5 +3,5 @@ export const joinClass = (...names) => {
 };
 
 export const randomId = (base, length = 8) => {
-  return (base || '_') + Math.random().toString(36).substr(2, length));
+  return (base || '_') + Math.random().toString(36).substr(2, length);
 };
