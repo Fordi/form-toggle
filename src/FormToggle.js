@@ -9,7 +9,6 @@ export default ({
   className,
   value,
   title,
-  ...props
 }) => {
   let uname = id || ((name || '_') + Math.random().toString(36).substr(2));
   return (
